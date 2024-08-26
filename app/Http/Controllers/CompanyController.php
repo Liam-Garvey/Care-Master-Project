@@ -48,7 +48,7 @@ class CompanyController extends Controller
             'logo' => $logoPath,
             'website' => $request->website,
         ]);
-        Mail::to($company->email)->send(
+        Mail::to($company->email)->queue(
             new CompanyPosted($company)
         );
 
