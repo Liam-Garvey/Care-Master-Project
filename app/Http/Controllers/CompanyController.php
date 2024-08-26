@@ -28,7 +28,6 @@ class CompanyController extends Controller
 
     public function show(Company $company)
     {
-        dd($company->logo);
         return view('companies.show', ['company' => $company]);
     }
 
