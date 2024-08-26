@@ -15,10 +15,6 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <img class="h-8 w-8" src="https://laracasts.com/images/logo/logo-triangle.svg"
-                                 alt="Your Company">
-                        </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
@@ -33,7 +29,6 @@
                         <div class="ml-4 flex items-center md:ml-6">
                             @guest
                                 <x-nav-link href="/login" :active="request()->is('login')">Log In</x-nav-link>
-                                <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
                             @endguest
 
                             @auth
@@ -81,14 +76,6 @@
                 </div>
                 <div class="border-t border-gray-700 pb-3 pt-4">
                     <div class="flex items-center px-5">
-                        <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full" src="https://laracasts.com/images/lary-ai-face.svg"
-                                 alt="">
-                        </div>
-                        <div class="ml-3">
-                            <div class="text-base font-medium leading-none text-white">Lary Robot</div>
-                            <div class="text-sm font-medium leading-none text-gray-400">jeffrey@laracasts.com</div>
-                        </div>
                         <button type="button"
                                 class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span class="absolute -inset-1.5"></span>
